@@ -101,7 +101,7 @@ compiler_clean:
 
 ####### Compile
 
-debug/main.o: ../lab1/main.cpp 
+debug/main.o: ../lab1/main.cpp ../lab1/train.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\lab1\main.cpp
 
 debug/train.o: ../lab1/train.cpp ../lab1/train.h
