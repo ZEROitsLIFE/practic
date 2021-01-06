@@ -40,6 +40,31 @@ Train::~Train()
 
 }
 
+ostream &operator<<(ostream &os, const Train &obj)
+{
+
+    os<<"ID="<<obj.id;
+    cout<<endl;
+    os<<"Місце призначення="<<obj.destination;
+    cout<<endl;
+    os<<"Номер поїзда="<<obj.number_train;
+    cout<<endl;
+    cout<<"Час відправки:\n";
+    os<<obj.hour<<":"<<obj.minut;;
+    cout<<endl;
+    os<<"Місць купе="<<obj.kupe;
+    cout<<endl;
+    os<<"Місць плацкард="<<obj.seatcard;
+    cout<<endl;
+    os<<"Місць люкс="<<obj.luxe;
+    cout<<endl;
+    os<<"Загальна кілткість місць="<<obj.number_all;
+
+ cout<<endl<<endl;
+    return os;
+
+}
+
 istream &operator>>(istream &is, Train &obj)
 {
     cout<<"ID=";
@@ -59,7 +84,8 @@ istream &operator>>(istream &is, Train &obj)
     is>>obj.seatcard;
     cout<<"Місць люкс=";
     is>>obj.luxe;
-
+    obj.number_all=obj.kupe+obj.seatcard+obj.luxe;
+ cout<<endl<<endl;
 
     return is;
 
