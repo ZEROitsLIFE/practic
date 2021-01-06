@@ -21,6 +21,7 @@ public:
     ~Train();
     friend istream& operator>> (istream& is, Train& obj);
     friend ostream& operator<<(ostream& os, const Train& obj);
+    Train &operator==(const Train&obj);
 
 
 };
