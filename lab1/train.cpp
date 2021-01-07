@@ -73,20 +73,20 @@ ostream &operator<<(ostream &os, const Train &obj)
 
     os<<"ID="<<obj.id;
     cout<<endl;
-    os<<"Місце призначення="<<obj.destination;
+    os<<"Destination="<<obj.destination;
     cout<<endl;
-    os<<"Номер поїзда="<<obj.number_train;
+    os<<"Train number="<<obj.number_train;
     cout<<endl;
-    cout<<"Час відправки:\n";
+    cout<<"Shipping time:\n";
     os<<obj.hour<<":"<<obj.minut;;
     cout<<endl;
-    os<<"Місць купе="<<obj.kupe;
+    os<<"Seats compartment="<<obj.kupe;
     cout<<endl;
-    os<<"Місць плацкард="<<obj.seatcard;
+    os<<"Seats seat="<<obj.seatcard;
     cout<<endl;
-    os<<"Місць люкс="<<obj.luxe;
+    os<<"Seats luxe="<<obj.luxe;
     cout<<endl;
-    os<<"Загальна кілткість місць="<<obj.number_all;
+    os<<"Total number of seats="<<obj.number_all;
 
     cout<<endl<<endl;
     return os;
@@ -97,20 +97,20 @@ istream &operator>>(istream &is, Train &obj)
 {
     cout<<"ID=";
     is>>obj.id;
-    cout<<"Місце призначення=";
+    cout<<"Destination=";
     is>>obj.destination;
-    cout<<"Номер поїзда=";
+    cout<<"Train number=";
     is>>obj.number_train;
-    cout<<"Введіть час відправки:\n";
-    cout<<"Година відправки=";
+    cout<<"Enter the sending time:\n";
+    cout<<"Shipping time=";
     is>>obj.hour;
-    cout<<"Хвилина відправки=";
+    cout<<"\Minute of sending=";
     is>>obj.minut;
-    cout<<"Місць купе=";
+    cout<<"Seats compartment=";
     is>>obj.kupe;
-    cout<<"Місць плацкард=";
+    cout<<"Seats seat=";
     is>>obj.seatcard;
-    cout<<"Місць люкс=";
+    cout<<"Seats luxe=";
     is>>obj.luxe;
     obj.number_all=obj.kupe+obj.seatcard+obj.luxe;
     cout<<endl<<endl;
