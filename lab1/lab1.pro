@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
+        plain.cpp \
         train.cpp
 
 HEADERS += \
+    plain.h \
     train.h
