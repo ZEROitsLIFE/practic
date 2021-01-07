@@ -8,11 +8,18 @@ using namespace std;
 
 int main()
 {
-//    transport k;
+    cout<<"Base class\n";
+    transport k;
+    k.set();
+    k.get();
     setlocale(LC_CTYPE,"ukr");
+    cout<<"Train class\n";
+
     Train a;
-//    Train b(1,12,20,10);
-//    Train d(b);
+    cin>>a;
+    cout<<a;
+    //    Train b(1,12,20,10);
+    //    Train d(b);
 
     //    Train object1, object2, object3;
     //    cin >> object1 >> object2 >> object3;
@@ -20,12 +27,11 @@ int main()
 
     //    cout<<"check object1 and object2\n";
     //    object1== object2;
+    cout<<"Plain class\n";
 
     Plain c;
     cin>>c;
     cout<<c;
 
-    cin>>a;
-    cout<<a;
     return 0;
 }

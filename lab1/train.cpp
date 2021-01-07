@@ -63,6 +63,36 @@ Train &Train::operator==(const Train &obj)
     else cout<<"Place not identical\n";
 }
 
+void Train::set()
+{
+    transport::set();
+    cout<<"Train number=";
+    cin>>number_train;
+    cout<<"Enter the sending time:\n";
+    cout<<"Seats compartment=";
+    cin>>kupe;
+    cout<<"Seats seat=";
+    cin>>seatcard;
+    cout<<"Seats luxe=";
+    cin>>luxe;
+    number_all=kupe+seatcard+luxe;
+}
+
+void Train::get() const
+{
+    transport::get();
+    cout<<"Train number="<<number_train;
+    cout<<endl;
+    cout<<"Seats compartment="<<kupe;
+    cout<<endl;
+    cout<<"Seats seat="<<seatcard;
+    cout<<endl;
+    cout<<"Seats luxe="<<luxe;
+    cout<<endl;
+    cout<<"Total number of seats="<<number_all;
+
+}
+
 
 
 ostream &operator<<(ostream &os, const Train &obj)
