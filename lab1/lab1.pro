@@ -6,8 +6,10 @@ CONFIG -= qt
 SOURCES += \
         main.cpp \
         plain.cpp \
-        train.cpp
+        train.cpp \
+        transport.cpp
 
 HEADERS += \
     plain.h \
-    train.h
+    train.h \
+    transport.h

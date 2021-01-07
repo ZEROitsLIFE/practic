@@ -3,18 +3,18 @@
 
 #include <string>
 
+#include "transport.h"
+
 using namespace std;
 
-class Plain
+class Plain : public transport
 {
 private:
-    int id;
-    string destination;                 //Пункт призначення
     int number_train;                   //Номер поїзду
-    int hour,minut;                     //Час відправки
+
 public:
     Plain();
-    Plain(int _id, string _destination, int _number_train, int _hour, int _minut); //Параметризований конструктор
+    Plain(int _number_train); //Параметризований конструктор
     Plain(const Plain &obj);                                                                                    //Конструктор копіювання
     ~Plain();
     friend istream& operator>> (istream& is, Plain& obj);

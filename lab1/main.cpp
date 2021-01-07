@@ -8,10 +8,11 @@ using namespace std;
 
 int main()
 {
+//    transport k;
     setlocale(LC_CTYPE,"ukr");
     Train a;
-    Train b(1,"Тернопіль",1,16,40,12,20,10);
-    Train d(b);
+//    Train b(1,12,20,10);
+//    Train d(b);
 
     //    Train object1, object2, object3;
     //    cin >> object1 >> object2 >> object3;
@@ -23,5 +24,8 @@ int main()
     Plain c;
     cin>>c;
     cout<<c;
+
+    cin>>a;
+    cout<<a;
     return 0;
 }
