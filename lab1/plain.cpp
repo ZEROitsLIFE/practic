@@ -28,6 +28,21 @@ Plain::~Plain()
 
 }
 
+void Plain::set()
+{
+    transport::set();
+    cout<<"Plain number=";
+    cin>>number_train;
+
+}
+
+void Plain::get() const
+{
+    transport::get();
+    cout<<"Train number="<<number_train;
+    cout<<endl;
+}
+
 ostream &operator<<(ostream &os, const Plain &obj)
 {
 

@@ -14,8 +14,8 @@ private:
 public:
     transport();
     ~transport();
-    void set();
-    void get()const;
+   virtual void set();
+   virtual void get()const;
 };
 
 #endif // TRANSPORT_H

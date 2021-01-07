@@ -19,6 +19,8 @@ public:
     ~Plain();
     friend istream& operator>> (istream& is, Plain& obj);
     friend ostream& operator<<(ostream& os, const Plain& obj);
+    void set() override;
+    void get() const override;
 
 };
 
